@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+
+		<title>A-LIZING.BY Купить авто - легко.</title>
+
+		<!--[if IE]>
+			<script>
+				document.createElement('header');
+				document.createElement('nav');
+				document.createElement('section');
+				document.createElement('article');
+				document.createElement('aside');
+				document.createElement('footer');
+			</script>
+		<![endif]-->
+		<style type="text/css">
+
+/* обнуляем все элементы */
+
+			* 
+
+				{
+
+				margin:0;
+
+				padding:0;
+
+				outline:none;
+
+				}  
+
+				
+
+/* --- Общие стили --- */ 
+
+			
+
+			html 
+
+				{
+
+				font-size:75%;
+
+				height:100%;
+
+				} 
+
+			body 
+
+				{
+
+				font:normal 1em/1.3 arial, helvetica, sans-serif;
+
+				color:#333;height:100%;
+
+				background:#f2f2f2;
+
+				} 
+
+			a 
+
+				{
+
+				color:#2b82dc;
+
+				}
+
+			aside:hover a, footer:hover a, p:hover a 
+
+				{
+
+				color:#0E6994;
+
+				} 
+
+			a:hover 
+
+				{
+
+				text-decoration:none;
+
+				color:#0E6994;
+
+				} 
+
+			abbr 
+
+				{
+
+				border-bottom:1px dotted #2b82dc;
+
+				cursor:help;
+
+				} 
+
+			h1, h2, h3, h4, h5, h6 
+
+									{
+
+									font-weight:bold;
+
+									line-height:1;
+
+									margin:4px 0 12px;
+
+									padding:4px;
+
+									color:#ff0000;
+
+									} 
+
+			h1 
+
+				{
+
+				font-size:1.88em;
+
+				font-weight:bold;
+
+				} 
+
+			h2 + a 
+
+					{
+
+					margin-bottom:10px;
+
+					}
+
+			li 
+
+				{
+
+				font-size:14px;
+
+				margin-bottom:10px;
+
+				margin-left:40px;
+
+				}
+
+			td 
+
+				{
+
+				font-size:14px;
+
+				padding-left:20px;
+
+				}
+
+			p 
+
+				{
+
+				font-size:14px;
+
+				text-align:justify;
+
+				word-spacing:.1ex;
+
+				line-height:1.6;
+
+				padding-left:4px;
+
+				margin-bottom:1em;
+
+				} 
+
+			ul 
+
+				{
+
+				font-size:14px;
+
+				list-style:none;
+
+				} 
+
+			ol 
+
+				{
+
+				list-style-position:inside;
+
+				}
+
+			.video 
+
+					{
+
+					 margin: 0 auto; 
+
+					 text-align: center;
+
+					}
+
+			summary 
+
+					{
+
+					margin-left:1em;
+
+					font-weight:bold;
+
+					color: #0000CD;
+
+					}
+
+			form 
+
+				{
+
+				margin:1em;
+
+				padding:.5em;
+
+				}
+
+			input[id=contact_name]
+
+								{
+
+								padding-left:5px;
+
+								margin-left:53px;
+
+								}
+
+								
+
+			input[id=contact_email]
+
+								{
+
+								padding-left:5px;
+
+								margin-left:41px;
+
+								}
+
+			input[id=contact_phone]
+
+								{
+
+								padding-left:5px;
+
+								margin-left:26px;
+
+								}
+
+			input[type=submit] 
+
+								{
+
+								border-radius:10px;
+
+								color: #2ca9e4;
+
+								padding:0.5em;
+
+								margin-left:2em;
+
+								}
+
+			/* делаем семантические тэги - блочными */ 	
+
+			header, nav, section, article, aside, footer 
+
+														{
+
+														display:block;
+
+														position:relative;
+
+														} 
+
+														
+
+			/* выравниваем страницу по центру, делаем отступы и цвет фона */ 			
+
+			#main 
+
+				{
+
+				width:1000px;
+
+				min-height:100%;
+
+				padding:0 50px;
+
+				margin:0 auto;
+
+				background:#FFFFFF;
+
+				} 
+
+				
+
+			/* пишем класс для шапки - header */ 			
+
+			.h 
+
+				{
+
+				overflow:hidden;
+
+				height:40px;
+
+				padding:35px 0px 25px 0;
+
+				} 
+
+				
+
+			/* меню навигации */ 
+
+			nav 
+
+				{
+
+				width:100%;
+
+				height:32px;
+
+				background:#FF0000;
+
+				/* border-radius:20px;*/
+
+				} 
+
+			nav li 
+
+					{
+
+					float:left;
+
+					margin:8px 20px 2px;
+
+					} 
+
+			nav a 
+
+					{
+
+					font-weight:bold;
+
+					text-decoration:none;
+
+					color:#fff;
+
+					} 
+
+			nav a:hover 
+
+						{
+
+						text-decoration:underline;
+
+						color:#fff;
+
+						} 
+
+			
+
+			/* область основного контента */ 
+
+			section 
+
+					{
+
+					overflow:hidden;
+
+					}
+
+					
+
+			/* стиль для картинки */ 
+
+			.image 
+
+					{
+
+					width:100%;
+
+					margin:0px 0;
+
+					} 
+
+			figure {
+
+					padding: 10px; /* Поля вокруг */
+
+					display: block; /* Блочный элемент */
+
+					width: 550px; /* Ширина */
+
+					margin: 0 10px 10px 0; /* Отступы */
+
+					text-align: center; /* Выравнивание по центру */
+
+				   }
+
+			figcaption {
+
+						color: #2ca9e4; /* Цвет текста */
+
+						font-size:1.2em;
+
+					   }		
+
+			 mark {
+
+					background: #ffec82;
+
+					padding: 1px 3px;
+
+					border: 1px dashed #333;
+
+				   }
+
+			/* внутренняя область контента */ 
+
+			section section 
+
+							{
+
+							float:left;
+
+							width:640px;
+
+							} 
+
+							
+
+			/* правая часть */ 
+
+			aside 
+
+				{
+
+				overflow:hidden;
+
+				width:1000px;
+
+				padding:0 30px;
+
+				} 
+
+				
+
+			/* нижняя часть - footer */ 
+
+			footer 
+
+					{
+
+					height:60px;
+
+					padding:25px 25px 0;
+
+					margin:20px 0 0;
+
+					border-top:1px solid #0E6994;
+
+					} 
+
+					
+
+			/* стили для выделения областей HTML */ 
+
+			.tag 
+
+				{
+
+				position:absolute;
+
+				right:6px;top:2px;
+
+				font-size:11px;
+
+				font-style:normal;
+
+				} 
+
+			header:hover, nav:hover, section:hover, article:hover, aside:hover, footer:hover 
+
+																							{
+
+																							
+
+																							} 
+
+			section section:hover, section aside:hover 
+
+														{
+
+														
+
+														} 
+
+			section article:hover 
+
+									{
+
+									
+
+									} 
+
+			article header:hover 
+
+									{
+
+									background:#FFD25D;
+
+									color:#777;
+
+									} 
+
+			section article .tag 
+
+								{
+
+								top:12px;
+
+								} 
+
+			article header .tag 
+
+								{
+
+								right:70px;
+
+								top:2px;
+
+								} 
+
+			aside .tag 
+
+						{
+
+						top:12px;
+
+						}
+
+		</style>
+	</head>
+	<body>
+		<div id="main"> <!-- Главный блок всей страницы (обертка) -->
+
+			
+
+			<!-- Тэг header  -->
+
+			<header class="h">
+
+				<h1>A-LIZING.BY Купить авто - легко.</h1>
+
+				<!-- <i class="tag">&lt;header&gt;</i>-->
+
+			</header>
+
+			<!-- Тэг section для вставки изображения логотипа -->
+
+				<img class="image" src="Images/iL2Q670L0.jpg" alt="" />
+
+				<!--<i class="tag">&lt;section&gt;</i>-->
+				<!-- Тэг nav -->
+			<nav>
+
+			<h2 hidden>Навигация по сайту A-LIZING.BY</h2>
+
+				<ul>
+
+					<li><a href="A-LIZING.html">О компании</a></li>
+
+					<li><a href="services.html">Услуги</a></li>
+
+					<li><a href="useful.html">Полезные статьи</a></li>
+
+					<li><a href="video.html">Видео</a></li>
+
+					<li><a href="contacts.html">Контакты</a></li>
+
+					<li><a href="author.html">Автор</a></li>					
+
+				</ul>
+
+				<!--<i class="tag">&lt;nav&gt;</i>-->
+
+			</nav>
+			
+			<!-- Блок всего контента страницы -->
+			<section>
+			
+					<header>
+						<h2>Примеры видео:</h2>
+						<!--<i class="tag">&lt;header&gt;</i>-->
+					</header>
+						<table bgcolor=lightgrey align=center width=1000 height=220 border=10 bordercolor=#ff0000>
+						<tr><td width=500 height=270><video src="991193081.mp4" width=400 controls></video></td><td align=center><font color="black">Интерьер внутри авто</font><br><a href=991193081.mp4>Скачать видеоклип (401 Кб)</a></td></tr>
+						<tr><td width=500 height=270><video src="stock-footage-teen-boy-looking-out-the-car-window-and-waving-his-hand.mp4" width=400 controls></video></td><td align=center><font color="black">Комфорт и безопасность</font><br><a href=stock-footage-teen-boy-looking-out-the-car-window-and-waving-his-hand.mp4>Скачать видеоклип (959 Кб)</a></td></tr>
+						<tr><td width=500 height=270><video src="stock-footage-cinematic-inspirational-video-of-young-woman-travelling-by-car-or-camper-van-opens-window-to.mp4" width=400 controls></video></td><td align=center><font color="black">Настроение</font><br><a href=stock-footage-cinematic-inspirational-video-of-young-woman-travelling-by-car-or-camper-van-opens-window-to.mp4>Скачать видеоклип (3,98 Мб)</a></td></tr>
+						<tr><td width=500 height=270><video src="903542236.mp4" width=400 controls></video></td><td align=center><font color="black">Дорога - уверенность</font><br><a href=903542236.mp4>Скачать видеоклип (10,0 Мб)</a></td></tr>
+						<tr><td width=500 height=270><video src="402000756.mp4" width=400 controls></video></td><td align=center><font color="black">Город</font><br><a href=402000756.mp4>Скачать видеоклип (305 Кб)</a></td></tr>
+						</table><br>
+												  
+				</article>
+						
+						<!--<i class="tag">&lt;section&gt;</i>-->
+			</section><br><br> 
+			<!-- Нижняя граница левой части контента -->
+			<aside>
+			<h2 hidden>Дополнительные ссылки</h2>
+				<table align=center width=900>
+				<tr><td width=300><a href="https://rating-avto.ru/cars/reyting-samyih-nadyozhnyih-avtomobiley-v-mire.html">Топ</a><br><em>Самые надёжные автомобили с мире</em></td><tr><td width=300><a href="https://avtocod.ru/kak-vybrat-avtomobil-pod-sebya">Как выбрать автомобиль под себя</a><br></td><td width=300><a href="https://task.by/">Таск</a><br><em>Один из самых популярных вариантов страхования</em></td><tr>
+				</table>
+			</aside>			
+			<!-- Авторская часть страницы footer -->
+			<footer>
+
+				Copyright &copy; 2019 <a href="A-LIZING.html" rel="copyright">A-LIZING</a>.All rights reserved. <br>
+
+				Email:<a href="mailto:gorelikovapolina04@gmail.com"> gorelikovapolina04@gmail.com</a><br>
+
+				Контактный телефон:<a href="tel: +375333247983"> 5159085</a><br><br> 
+
+				<!--<i class="tag">&lt;footer&gt;</i>-->
+
+			</footer>
+
+		</div> <!-- Границы главного блока (обертки) страницы -->
+
+	</body>
+
+</html>
